@@ -1,5 +1,6 @@
 numpy
 pandas
+matplotlib
 praw
 nltk
 contractions
@@ -10,5 +11,11 @@ tensorflow
 torch 
 torchvision
 boto3
+python-dotenv
+scikit-learn
+seaborn
+wordcloud
+streamlit
+plotly
 
 -e .
