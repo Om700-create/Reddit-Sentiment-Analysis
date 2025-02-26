@@ -1,73 +1,78 @@
-# Reddit Sentiment Analysis Project
-# 🚀 Reddit Sentiment Analysis (Top 0.1% Data Science Project)
+# Reddit Sentiment Analysis
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Cloud%20Deployed-red)](https://streamlit.io/)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](#)
+## Overview
+The **Reddit Sentiment Analysis** project aims to analyze sentiment trends on Reddit using NLP techniques. It involves data extraction, preprocessing, sentiment analysis, and visualization of trends. The project provides insights into how users express opinions across different topics.
 
-## 📌 Overview
-This **cutting-edge** Reddit Sentiment Analysis project is designed to provide deep insights into user sentiments across various subreddits. With **advanced NLP techniques** and **interactive dashboards**, this project ranks among the **top 0.1% of sentiment analysis implementations**.
+## Features
+- **Sentiment Classification:** Categorizes posts as Positive, Negative, or Neutral.
+- **Word Cloud Visualization:** Highlights the most frequent words in different sentiment categories.
+- **Sentiment Score Distribution:** Shows the spread of sentiment scores.
+- **Time-Series Sentiment Analysis:** Tracks sentiment changes over time.
+- **Confusion Matrix:** Evaluates model performance.
 
-🔹 **Sentiment Classification** using Machine Learning models  
-🔹 **Time-Series Sentiment Trends** for in-depth analysis  
-🔹 **Interactive Streamlit Dashboard** with filtering options  
-🔹 **Advanced Visualizations** for enhanced insights  
+## Visualizations & Observations
+### 1️⃣ Confusion Matrix
+![Confusion Matrix](./confusion_matrix.png)
+- The confusion matrix provides an overview of model performance.
+- It shows the number of correct and incorrect predictions across different sentiment categories.
+- Higher diagonal values indicate better classification accuracy.
 
-## 📊 Key Visualizations
+### 2️⃣ Enhanced Word Cloud
+![Word Cloud](./enhanced_word_cloud.png)
+- The word cloud highlights the most frequent words in Reddit comments.
+- Positive words like "love" and "great" appear prominently.
+- Negative sentiment words such as "bad" and "hate" are also visible, reflecting the emotional polarity.
 
-### Confusion Matrix - Model Performance
-![Confusion Matrix](https://raw.githubusercontent.com/Om700-create/Reddit-Sentiment-Analysis/main/reports/figures/confusion_matrix.png)
+### 3️⃣ Sentiment Distribution
+![Sentiment Distribution](./sentiment_distribution.png)
+- This visualization shows the proportion of Positive, Neutral, and Negative comments.
+- A balanced distribution suggests diverse opinions, while skewed data may indicate bias.
+- The chart helps in understanding the overall sentiment trend.
 
-### Word Cloud - Most Frequent Words
-![Word Cloud](https://raw.githubusercontent.com/Om700-create/Reddit-Sentiment-Analysis/main/reports/figures/enhanced_word_cloud.png)
+### 4️⃣ Sentiment Scores
+![Sentiment Scores](./sentiment_scores.png)
+- Displays sentiment scores on a scale, revealing intensity variations.
+- Scores close to zero indicate neutral sentiments, while extremes denote strong positivity or negativity.
+- This helps gauge the strength of user opinions.
 
-### Sentiment Distribution
-![Sentiment Distribution](https://raw.githubusercontent.com/Om700-create/Reddit-Sentiment-Analysis/main/reports/figures/sentiment_distribution.png)
+### 5️⃣ Time-Series Sentiment Analysis
+![Time Series Sentiment](./time_series_sentiment.png)
+- Shows how sentiment trends evolve over time.
+- Peaks and dips indicate significant events or discussions affecting sentiment.
+- This analysis is useful for detecting shifts in user opinions.
 
-### Sentiment Scores Breakdown
-![Sentiment Scores](https://raw.githubusercontent.com/Om700-create/Reddit-Sentiment-Analysis/main/reports/figures/sentiment_scores.png)
+## Technologies Used
+- **Python**: Data processing and sentiment analysis
+- **NLTK & VADER**: Sentiment classification
+- **Matplotlib & Seaborn**: Data visualization
+- **Pandas & NumPy**: Data manipulation
+- **MySQL**: Data storage
 
-### Time-Series Sentiment Trends
-![Time-Series Sentiment](https://raw.githubusercontent.com/Om700-create/Reddit-Sentiment-Analysis/main/reports/figures/time_series_sentiment.png)
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/reddit-sentiment-analysis.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the analysis script:
+   ```bash
+   python sentiment_analysis.py
+   ```
 
-## 🎯 Features
-✅ **Real-time Reddit Data Processing**  
-✅ **ML-based Sentiment Prediction** (Positive, Neutral, Negative)  
-✅ **Dynamic Visualizations for Data Exploration**  
-✅ **Filters for subreddit, authors, and date**  
-✅ **Streamlit-based UI for an engaging experience**  
+## Future Enhancements
+- Improve sentiment model accuracy with fine-tuning.
+- Implement real-time sentiment tracking.
+- Integrate with additional NLP models (e.g., BERT, GPT).
+- Build an interactive dashboard for better visualization.
 
-## 🚀 How to Run Locally
-```bash
-# Clone the repository
-git clone https://github.com/Om700-create/Reddit-Sentiment-Analysis.git
-cd Reddit-Sentiment-Analysis
+## Conclusion
+This project provides valuable insights into Reddit discussions, helping to understand public sentiment trends effectively. The visualizations and analysis contribute to a deeper understanding of how different topics are perceived online.
 
-# Create and activate a virtual environment
-python -m venv reddit_env
-source reddit_env/bin/activate  # On Windows use `reddit_env\Scripts\activate`
+🚀 **Feel free to contribute and enhance this project!**
 
-# Install dependencies
-pip install -r requirements.txt
 
-# Run the Streamlit app
-streamlit run src/app/dashboard.py
-```
-
-## 🔥 Deployment on Streamlit Cloud
-To deploy this project on **Streamlit Cloud**, follow these steps:
-1. Push your code to **GitHub**
-2. Go to **[Streamlit Cloud](https://share.streamlit.io/)**
-3. Select the **repository & branch**
-4. Set the main file path to `src/app/dashboard.py`
-5. Click **Deploy** 🚀
-
-## 🤝 Contributions
-Contributions are welcome! Feel free to fork, open issues, or submit PRs to improve the project.
-
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 **🚀 Elevate Your NLP Projects to the Next Level!**
 
