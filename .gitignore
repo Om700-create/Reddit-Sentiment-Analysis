@@ -200,7 +200,7 @@ debug.log
 data/
 datasets/
 reports/data/
-reports/figures/
+
 
 # Ignore environment variables and credentials
 .env
